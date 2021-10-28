@@ -42,7 +42,7 @@ RUN cd mumble && qmake -recursive main.pro CONFIG+="no-client grpc" && \
 ##########################
 # Build the release image.
 FROM ubuntu:20.04
-LABEL MAINTAINER Alfred Gutierrez <alf.g.jr@gmail.com>
+LABEL MAINTAINER Ben Haresign <blamemiller@gmail.com>
 
 RUN adduser murmur
 RUN apt-get update && apt-get install -y \
